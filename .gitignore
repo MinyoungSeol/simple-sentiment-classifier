@@ -1,0 +1,36 @@
+# Python 관련 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+.vscode/
+
+# Jupyter Notebook 관련 파일
+.ipynb_checkpoints/
+
+# 데이터 파일 (대용량 파일, 원본 데이터 등)
+data/*.csv
+# 특히, 원본 대용량 데이터는 커밋하지 않는 것이 좋습니다.
+# 만약 전처리된 20k CSV 파일만 커밋하고 싶다면 data/preprocessed_sentiment_data_20k.csv만 예외 처리할 수 있습니다.
+# 예를 들어:
+# !data/preprocessed_sentiment_data_20k.csv # 특정 파일은 예외
+
+# 모델 파일
+models/*.joblib
+models/*.h5 # 나중에 Keras/TensorFlow 모델을 저장할 경우
+models/*.pt # 나중에 PyTorch 모델을 저장할 경우
+
+# 운영체제 관련 파일
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# 로그 파일
+*.log
+
+# personal note
+etc/
